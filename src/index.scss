@@ -1,0 +1,184 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-grid{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 90%;
+}
+
+
+header{
+    .desc{
+        @include flex-center();
+    }
+
+    .search{
+        @include flex-center();
+    }
+
+    .logo{
+        width: 139px;
+        height: 50.64px;
+    }
+
+    input{
+        width: 657px;
+        height: 48px;
+    }
+
+    .icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    .links{
+        @include flex-center();
+    }
+}
+
+
+.content{
+@include center-grid();
+justify-items: center;
+
+    .banner{
+        width: 1443px;
+        height: 395px;
+    }
+
+    .category{
+        height: 174px;
+        @include flex-center();
+
+        .imgCategory{
+            width: 143px;
+            height: 174px;
+        }
+    }
+
+
+    .products{
+        text-align: center;
+
+        .topics{
+            @include flex-center();
+        }
+
+        .cards{
+            @include flex-center();
+
+            .card{
+                width: 270px;
+                height: 500px;
+
+                img{
+                    width: 247px;
+                    height: 228px;
+                }
+            }
+        }
+    }
+
+    .partners{
+        @include flex-center();   
+
+        .card{
+            background-image: url("../public/img/image.png");
+            width: 574px;
+            height: 350px;
+        }
+    }
+
+    .products-related{
+        @include flex-center();
+
+        .card{
+            background-image: url("../public/img/image.png");
+            width: 589.73px;
+            height: 284px;
+        }
+    }
+
+    .brands{
+
+        width: 1250px;
+        height: 331px;
+
+        .icons{
+            @include flex-center();
+
+            .icon{
+                background-color: white;
+                width: 211px;
+                height: 211px;
+                border-radius: 50%;
+                @include flex-center();
+            }
+        }
+    }
+
+    .footer{
+        @include flex-center();
+
+        .about{
+            .iconSocial{
+                width: 22.02px;
+                height: 22px;
+            }
+        }
+
+        .payment{
+                .img{
+                    display: grid;
+                    grid-template-columns: repeat(3, 3fr);
+                }
+                
+                .img img{
+                    width: 55px;
+                    height: 19.55px;
+                }
+
+        }
+
+        .register{
+            input{
+                width: 230px;
+                height: 45px;
+            }
+
+            button{
+                width: 62px;
+                height: 45px;
+            }
+        }
+    }
+    .copyright{
+        @include flex-center();
+
+        .img img{
+            width: 106.25px;
+            height: 31.62px;    
+        }
+    }
+    
+}
