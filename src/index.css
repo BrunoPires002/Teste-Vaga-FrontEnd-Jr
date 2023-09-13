@@ -21,8 +21,30 @@ header .desc {
 }
 header .search {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+header .search button {
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #F6F5F2;
+  padding: 0 10px 0 10px;
+}
+header .search form {
+  display: flex;
+}
+header .search input {
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: #F6F5F2;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  padding-left: 10px;
+}
+header .search .icons img {
+  padding: 0 10px 0 10px;
 }
 header .logo {
   width: 139px;

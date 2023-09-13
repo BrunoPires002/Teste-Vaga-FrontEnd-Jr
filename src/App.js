@@ -19,10 +19,10 @@ function App() {
             <div className="search">
               <img src='img/logo.png' className="logo"></img>
 
-              <input type="text" id="txtSearch" placeholder="O que você está buscando?"> 
-                
-              </input>
-              <img src="img/MagnifyingGlass.png"></img>
+              <form action="" method="" className="formSearch">
+                <input type="text" id="txtSearch" className="search" placeholder="O que você está buscando?"></input>
+                <button type="button"><img src="img/MagnifyingGlass.png"></img></button>
+              </form>
 
               <section className="icons">
                 <img src="img/Group.png" className="icon"></img>

@@ -10,6 +10,12 @@
     text-align: center;
 }
 
+@mixin space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +39,34 @@ header{
     }
 
     .search{
-        @include flex-center();
+        @include space-around();
+
+        button{
+            border: none;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: #F6F5F2;
+            padding: 0 10px 0 10px;
+
+        }
+        
+        form{
+            display: flex;
+        }
+
+        input{
+            border: none;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            background-color: #F6F5F2;
+            box-shadow: 0 0 0 0;
+            outline: 0;
+            padding-left: 10px;
+        }
+
+        .icons img{
+            padding: 0 10px 0 10px;
+        }
     }
 
     .logo{
