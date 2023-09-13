@@ -1,7 +1,6 @@
 @import './colors.scss';
 @import './functions.scss';
 
-
 *{
     margin: 0;
     padding: 0;
@@ -20,11 +19,23 @@ main{
 
 
 header{
-    .desc{
-        @include flex-center();
+    .desc {
+        @include space-around();
+        font-size: 12px;
+        color: $gray;
 
         .red{
             color: $primarycolor;
+        }
+
+        .buy{
+            @include space-around();
+            margin: 10px 10px 10px 10px;
+        }
+
+        .buy h1,h2,img{
+            margin: 0 3px 0 3px;
+
         }
     }
 

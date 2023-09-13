@@ -8,9 +8,15 @@ function App() {
         <header>
 
           <section className="desc">
-            <img src="img/ShieldCheck.png" className="icon"></img> <h1>Compra 100% segura</h1>
-            <img src="img/Truck.png" className="icon"></img> <h1>Frete grátis acima de R$ 200</h1>
-            <img src="img/CreditCard.png" className="icon"></img> <h1>Parcele suas compras</h1>
+            <section className="buy">
+              <img src="img/ShieldCheck.png" className="icon"></img> <h1>Compra </h1><h1 className="red"> 100% segura</h1>
+            </section>
+            <section className="buy">
+            <img src="img/Truck.png" className="icon"></img><h1 className="red">Frete grátis </h1> <h1> acima de R$ 200</h1>
+            </section>
+            <section className="buy">
+            <img src="img/CreditCard.png" className="icon"></img><h1 className="red">Parcele </h1> <h1> suas compras</h1>
+            </section>
           </section>
 
           <nav>

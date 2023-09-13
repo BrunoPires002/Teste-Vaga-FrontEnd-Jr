@@ -16,11 +16,22 @@ main {
 
 header .desc {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  font-size: 12px;
+  color: #9F9F9F;
 }
 header .desc .red {
   color: #F71963;
+}
+header .desc .buy {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+header .desc .buy h1, header .desc h2, header .desc img {
+  margin: 0 3px 0 3px;
 }
 header .search {
   display: flex;
