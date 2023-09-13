@@ -15,3 +15,14 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@mixin content{
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

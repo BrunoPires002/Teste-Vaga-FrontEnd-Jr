@@ -1,5 +1,8 @@
 import "./index.css";
 
+import { logo, crown, ShieldCheck, Truck, card, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda  } from './img.js';
+
+
 function App() {
   return (
     <div className="App">
@@ -9,13 +12,13 @@ function App() {
 
           <section className="desc">
             <section className="buy">
-              <img src="img/ShieldCheck.png" className="icon"></img> <h1>Compra </h1><h1 className="red"> 100% segura</h1>
+              {ShieldCheck()} <h1>Compra </h1><h1 className="red"> 100% segura</h1>
             </section>
             <section className="buy">
-            <img src="img/Truck.png" className="icon"></img><h1 className="red">Frete grátis </h1> <h1> acima de R$ 200</h1>
+              {Truck()}<h1 className="red">Frete grátis </h1> <h1> acima de R$ 200</h1>
             </section>
             <section className="buy">
-            <img src="img/CreditCard.png" className="icon"></img><h1 className="red">Parcele </h1> <h1> suas compras</h1>
+              {card()}<h1 className="red">Parcele </h1> <h1> suas compras</h1>
             </section>
           </section>
 
@@ -23,7 +26,9 @@ function App() {
             <hr></hr>
 
             <div className="search">
-              <img src='img/logo.png' className="logo"></img>
+              <section className="logo">
+                {logo()}
+              </section>
 
               <form action="" method="" className="formSearch">
                 <input type="text" id="txtSearch" className="search" placeholder="O que você está buscando?"></input>
@@ -31,10 +36,10 @@ function App() {
               </form>
 
               <section className="icons">
-                <img src="img/Group.png" className="icon"></img>
-                <img src="img/Heart.png" className="icon"></img>
-                <img src="img/UserCircle.png" className="icon"></img>
-                <img src="img/ShoppingCart.png" className="icon"></img>
+                <div className="icon"><a href="">{vector()}</a></div>
+                <div className="icon"><a href="">{Heart()}</a></div>
+                <div className="icon"><a href="">{UserCircle()}</a></div>
+                <div className="icon"><a href="">{ShoppingCart()}</a></div>
               </section>
             </div>
             
@@ -47,7 +52,11 @@ function App() {
               <a href="">MODA</a>
               <a href="">LANÇAMENTOS</a>
               <a href="">OFERTAS DO DIA</a>
-              <img src="img/CrownSimple.png"></img><a href="">ASSINATURA</a>
+              <section className="icon">
+                <a href="">
+                  {crown()}
+                ASSINATURA</a>
+              </section>
             </section>
           </nav>
         </header>
@@ -59,58 +68,75 @@ function App() {
           <section className="category">
 
             <section className="card">
-              <img src="img/pc.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                <a href="">{pc()}</a>
+              </div>
               <h1>Tecnologia</h1>
             </section>
             <section className="card">
-              <img src="img/supermercado.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                {supermercado()}
+              </div>
               <h1>Supermercado</h1>
             </section>
             <section className="card">
-              <img src="img/whiskey.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                {whiskey()}
+              </div>
               <h1>Bebidas</h1>
             </section>
             <section className="card">
-              <img src="img/ferramentas.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                {ferramentas()}
+              </div>
               <h1>Ferramentas</h1>
             </section>
             <section className="card">
-              <img src="img/saude.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                {saude()}
+              </div>
               <h1>Saúde</h1>
             </section>
             <section className="card">
-              <img src="img/corrida.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                {esportes()}
+              </div>
               <h1>Esportes e Fitness</h1>
             </section>
             <section className="card">
-              <img src="img/moda.png" className="imgCategory"></img>
+              <div className="imgCategory">
+                {moda()}
+              </div>
               <h1>Moda</h1>
             </section>
 
           </section>
           
-          <h2>Produtos relacionados</h2>
+          <h2 className="title">Produtos relacionados</h2>
 
-          <section className="products">
-
-            <section className="topics">
+          <section className="topics">
               <a href="">CELULAR</a>
               <a href="">ACESSÓRIOS</a>
               <a href="">TABLETS</a>
               <a href="">NOTEBOOKS</a>
               <a href="">TVS</a>
               <a href="">VER TODOS</a>
-            </section>
+          </section>
+          
+          <section className="products">
 
             <section className="cards">
 
               <section className="card">
-                <img src="img/"></img>
-                <h2 className="nameProduct">Name</h2>
-                <h1 className="valueTrue">Valor sem desconto</h1>
-                <h1 className="valueFinal">Valor a vista</h1>
-                <h1 className="installments">Parcelas</h1>
-                <h1 className="frete">Frete grátis</h1>
+                <section className="cont">
+                  <img src="img/"></img>
+                  <h2 className="nameProduct">Name</h2>
+                  <h1 className="valueTrue">Valor sem desconto</h1>
+                  <h1 className="valueFinal">Valor a vista</h1>
+                  <h1 className="installments">Parcelas</h1>
+                  <h1 className="frete">Frete grátis</h1>
+                  <button className="btn">COMPRAR</button>
+                </section>
               </section>
 
             </section>
@@ -133,7 +159,7 @@ function App() {
 
           </section>
 
-          <h2>Produtos relacionados</h2>
+          <h2 className="title">Produtos relacionados</h2>
           <h1>Ver todos</h1>
 
           <section className="products-related">

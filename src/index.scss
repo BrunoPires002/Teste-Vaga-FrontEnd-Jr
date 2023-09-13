@@ -17,6 +17,9 @@ main{
     width: 90%;
 }
 
+hr{
+    border-color: $neutracolor;
+}
 
 header{
     .desc {
@@ -33,7 +36,7 @@ header{
             margin: 10px 10px 10px 10px;
         }
 
-        .buy h1,h2,img{
+        .buy h1,h2,svg{
             margin: 0 3px 0 3px;
 
         }
@@ -41,14 +44,19 @@ header{
 
     .search{
         @include space-around();
+        margin: 5px 0 5px 0;
 
+        
+        a{
+            color: $gray;
+        }
         button{
             border: none;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
             background-color: $neutracolor;
             padding: 0 10px 0 10px;
-
+            margin: 5px 0 5px 0;
         }
         
         form{
@@ -65,8 +73,15 @@ header{
             padding-left: 10px;
         }
 
-        .icons img{
+        .icons{
+            display: flex;
+        }
+        .icons .icon{
             padding: 0 10px 0 10px;
+        }
+        .icon a:hover{
+            color: $primarycolor;
+            transition: 0.3s;
         }
     }
 
@@ -80,36 +95,109 @@ header{
         height: 48px;
     }
 
-    .icon{
-        width: 24px;
-        height: 24px;
+    .search .icon{
+        @include flex-center();
+        width: 32px;
+        height: 32px;
     }
 
     .links{
-        @include flex-center();
+        @include space-around();
+
+        a{
+            color: $gray;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin: 10px 0 10px 0;
+        }
+
+        a:hover{
+            color: $primarycolor;
+            transition: 0.3s;
+        }
+
+        .icon{
+            @include flex-center();
+
+            img, svg{
+                padding: 0 10px 0 10px;
+            }
+        }
     }
 }
 
 
 .content{
-@include center-grid();
-justify-items: center;
+@include content();
 
     .banner{
-        width: 1443px;
+        width: 100%;
         height: 395px;
+    }
+    
+    .title{
+        color: $primarycolor;
+        font-weight: bold;
     }
 
     .category{
         height: 174px;
-        @include flex-center();
+        width: 100%;
+        margin: 25px 0 25px 0;
+        @include space-between();
 
         .imgCategory{
-            width: 143px;
-            height: 174px;
+            @include flex-center();
+            color: $primarycolor;
+            width: 128px;
+            height: 128px;
+            background-color: $neutracolor;
+            border-radius: 20px;
+        }
+
+        .card{
+            height: 100%;
+            text-align: -webkit-center;
+
+            h1{
+                margin-top: 20px;
+            }
+        }
+
+        .card:hover{
+            color: $primarycolor;
+            transition: 0.3s;
+
         }
     }
 
+    .topics{
+        @include flex-center();
+        width: 100%;
+        margin: 25px 0 25px 0;
+        
+        a{
+            color: $gray;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            margin: 10px 0 10px 0;
+            width: 100%;
+            height: 40px;
+            justify-content: center;
+            border: solid 2px $gray;
+        }
+
+        a:hover{  
+            color: $primarycolor;
+            transition: 0.3s;
+        }
+    }
 
     .products{
         text-align: center;
@@ -120,14 +208,27 @@ justify-items: center;
 
         .cards{
             @include flex-center();
+            height: 500px;
 
             .card{
-                width: 270px;
-                height: 500px;
 
                 img{
                     width: 247px;
                     height: 228px;
+                }
+
+                .cont{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .nameProduct, .valueTrue, .valueFinal, .installments, .frete{
+                    text-align: left;
+                }
+
+                .btn{
+                    width: 100%;
+                    height: 44px;
                 }
             }
         }
