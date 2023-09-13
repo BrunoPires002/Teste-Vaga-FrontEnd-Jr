@@ -1,20 +1,6 @@
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import './colors.scss';
+@import './functions.scss';
 
-@mixin center-grid{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-}
-
-@mixin space-around{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 *{
     margin: 0;
@@ -36,6 +22,10 @@ main{
 header{
     .desc{
         @include flex-center();
+
+        .red{
+            color: $primarycolor;
+        }
     }
 
     .search{
@@ -45,7 +35,7 @@ header{
             border: none;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
-            background-color: #F6F5F2;
+            background-color: $neutracolor;
             padding: 0 10px 0 10px;
 
         }
@@ -58,7 +48,7 @@ header{
             border: none;
             border-bottom-left-radius: 8px;
             border-top-left-radius: 8px;
-            background-color: #F6F5F2;
+            background-color: $neutracolor;
             box-shadow: 0 0 0 0;
             outline: 0;
             padding-left: 10px;

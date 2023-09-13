@@ -19,6 +19,9 @@ header .desc {
   justify-content: center;
   align-items: center;
 }
+header .desc .red {
+  color: #F71963;
+}
 header .search {
   display: flex;
   justify-content: space-around;
