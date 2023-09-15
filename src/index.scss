@@ -190,10 +190,25 @@ header {
         }
     }
 
+    .hr {
+        display: flex;
+        justify-content: space-around;
+
+        hr {
+            align-self: center;
+            width: 30%;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+
     .topics {
         @include flex-center();
         width: 100%;
-        margin: 25px 0 25px 0;
+        margin: 0 0 25px 0;
 
         a {
             color: $gray;
@@ -206,7 +221,7 @@ header {
             width: 100%;
             height: 40px;
             justify-content: center;
-            border: solid 2px $gray;
+            border: solid 1px $gray;
         }
 
         a:hover {
@@ -215,9 +230,18 @@ header {
         }
     }
 
+    .products::-webkit-scrollbar{
+        display: none;
+    }
+
     .products {
         text-align: center;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 8px 0px 8px 0px;
         margin: 25px 0 25px 0;
+        
+
 
         .topics {
             @include flex-center();
@@ -225,11 +249,28 @@ header {
 
         .cards {
             @include flex-center();
-            margin: 10px;
+            place-content: start;
+            
+
+            .buttons {
+                width: 97%;
+                left: 30px;
+                display: flex;
+                position: absolute;
+                justify-content: space-between;
+
+                button {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
 
             .card {
                 height: 500px;
                 padding: 10px;
+                margin: 0 50px 0 0;
+                border-radius: 8px;
                 box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
 
                 .cont {
@@ -243,6 +284,8 @@ header {
 
                     .nameProduct {
                         width: 245px;
+                        font-size: 15px;
+                        font-weight: lighter;
                     }
 
                     .value {
@@ -251,12 +294,14 @@ header {
                         .valueTrue {
                             font-weight: lighter;
                             font-size: 16px;
-
+                            color: $gray;
+                            text-decoration: line-through;
                         }
 
                         .valueFinal {
                             font-weight: bold;
                             font-size: 20px;
+                            color: $gray-black;
                         }
                     }
 
@@ -601,10 +646,11 @@ header {
             }
         }
 
-        .title, .cont{
+        .title,
+        .cont {
             margin-bottom: 80px;
         }
-        
+
     }
 
     .register {
@@ -649,7 +695,7 @@ header {
                     padding: 0 15px 0;
                     border: solid 0.5px;
                     font-size: 12px;
-                    
+
                 }
 
                 button {

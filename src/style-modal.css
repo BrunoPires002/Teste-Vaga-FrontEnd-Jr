@@ -10,7 +10,7 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .modal-wrapper {
@@ -50,18 +50,19 @@ main {
   font-weight: bold;
 }
 .modal .desc {
-  color: #222222;
+  color: #3F3F40;
   font-size: 10px;
 }
 .modal .more a {
   color: #041E50;
   text-decoration: none;
   font-size: 12px;
+  size: 20px;
 }
 .modal .quant {
   width: 110px;
   height: 36px;
-  border: solid 2px #041E50;
+  border: solid 1px #041E50;
   border-radius: 8px;
   display: flex;
   justify-content: space-around;
@@ -71,7 +72,6 @@ main {
   background-color: white;
   border: none;
   width: 20.31px;
-  height: 19.64px;
   color: #041E50;
 }
 .modal .quant p {
@@ -80,6 +80,11 @@ main {
 }
 .modal .quant button:hover {
   cursor: pointer;
+}
+.modal .quant .mais,
+.modal .quant .menos {
+  font-size: 25px;
+  text-align: center;
 }
 .modal .btn {
   width: 245px;
@@ -96,6 +101,8 @@ main {
   justify-content: space-around;
   width: 70%;
   margin: 25px;
+  color: #041E50;
+  font-weight: normal;
 }
 .modal .modal-close-button {
   font-size: 1.4rem;

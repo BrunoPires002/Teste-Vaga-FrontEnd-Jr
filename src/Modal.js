@@ -16,7 +16,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
               <span aria-hidden="true">&times;</span>
             </button>
             <h2 className='title'>
-              LOREM IPSUM DOLOR SIT AMET
+              title
             </h2>
           <h2 className="value">
             R$ 1.499,90

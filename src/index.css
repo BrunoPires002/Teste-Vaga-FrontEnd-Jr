@@ -173,12 +173,24 @@ header .links .icon svg {
   color: #F71963;
   transition: 0.3s;
 }
+.content .hr {
+  display: flex;
+  justify-content: space-around;
+}
+.content .hr hr {
+  align-self: center;
+  width: 30%;
+}
+.content .hr .title {
+  font-weight: bold;
+  font-size: 30px;
+}
 .content .topics {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 25px 0 25px 0;
+  margin: 0 0 25px 0;
 }
 .content .topics a {
   color: #9F9F9F;
@@ -191,14 +203,20 @@ header .links .icon svg {
   width: 100%;
   height: 40px;
   justify-content: center;
-  border: solid 2px #9F9F9F;
+  border: solid 1px #9F9F9F;
 }
 .content .topics a:hover {
   color: #F71963;
   transition: 0.3s;
 }
+.content .products::-webkit-scrollbar {
+  display: none;
+}
 .content .products {
   text-align: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 0px 8px 0px;
   margin: 25px 0 25px 0;
 }
 .content .products .topics {
@@ -210,11 +228,25 @@ header .links .icon svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  place-content: start;
+}
+.content .products .cards .buttons {
+  width: 97%;
+  left: 30px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+}
+.content .products .cards .buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .content .products .cards .card {
   height: 500px;
   padding: 10px;
+  margin: 0 50px 0 0;
+  border-radius: 8px;
   box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
 }
 .content .products .cards .card .cont {
@@ -310,6 +342,8 @@ header .links .icon svg {
 }
 .content .products .cards .card .cont .nameProduct {
   width: 245px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 .content .products .cards .card .cont .value {
   width: 247px;
@@ -317,10 +351,13 @@ header .links .icon svg {
 .content .products .cards .card .cont .value .valueTrue {
   font-weight: lighter;
   font-size: 16px;
+  color: #9F9F9F;
+  text-decoration: line-through;
 }
 .content .products .cards .card .cont .value .valueFinal {
   font-weight: bold;
   font-size: 20px;
+  color: #3F3F40;
 }
 .content .products .cards .card .cont .installments,
 .content .products .cards .card .cont .frete,
@@ -567,7 +604,8 @@ header .links .icon svg {
   height: 22px;
   cursor: pointer;
 }
-.footer .about .title, .footer .about .cont,
+.footer .about .title,
+.footer .about .cont,
 .footer .information .title,
 .footer .information .cont,
 .footer .payment .title,

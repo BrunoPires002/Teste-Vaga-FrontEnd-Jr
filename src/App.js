@@ -1,5 +1,7 @@
-import React from 'react';
-import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo } from './img.js';
+import React, { useEffect, useState, useRef } from "react";
+import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo, left, right } from './img.js';
+
+//json
 
 //import "./Modal.js";
 
@@ -8,6 +10,37 @@ import useModal from './useModal.js';
 
 function App() {
   const { isShowing, toggle } = useModal();
+
+  const carousel = useRef(null);
+
+  const [data, setData] = useState([]);
+
+  const fetchData = () => {
+    fetch(`https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json`)
+      .then((response) => response.json())
+      .then((actualData) => {
+        console.log(actualData);
+        setData(actualData.products);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const handleLeftClick = (e) => {
+    e.preventDefault();
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  }
+
+  const handleRightClick = (e) => {
+    e.preventDefault();
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  }
 
   return (
     <div className="App">
@@ -26,7 +59,6 @@ function App() {
               {card()}<h1 className="red">Parcele </h1> <h1> suas compras</h1>
             </section>
           </section>
-
           <nav>
             <hr></hr>
 
@@ -120,7 +152,11 @@ function App() {
 
           </section>
 
-          <h2 className="title">Produtos relacionados</h2>
+          <div className='hr'>
+            <hr></hr>
+            <h2 className="title">Produtos relacionados</h2>
+            <hr></hr>
+          </div>
 
           <section className="topics">
             <a href="">CELULAR</a>
@@ -131,25 +167,34 @@ function App() {
             <a href="">VER TODOS</a>
           </section>
 
-          <section className="products">
-
+          <section className="products" ref={carousel}>
             <section className="cards">
 
-              <section className="card">
-                <section className="cont">
-                  <img src="img/"></img>
-                  <h2 className="nameProduct">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                  <section className="value">
-                    <h1 className="valueTrue">R$ 30,90</h1>
-                    <h1 className="valueFinal">R$ 28,90</h1>
-                  </section>
-                  <h1 className="installments">ou 2x de R$ 49,95 sem juros</h1>
-                  <h1 className="frete">Frete grátis</h1>
+            <div className="buttons">
+              <button onClick={handleLeftClick}>{left()}</button>
+              <button onClick={handleRightClick}>{right()}</button>
+            </div>
 
-                  <button className="btn" onClick={toggle}>COMPRAR</button>
-                  <Modal isShowing={isShowing} hide={toggle} />
+              {data.map((item, index) => (
+                <section className="card">
+                  <section className="cont">
+                    <img src={item.photo}></img>
+                    <h2 className="nameProduct">{item.productName}</h2>
+                    <section className="value">
+                      <h1 className="valueTrue">R$ 30,90</h1>
+                      <h1 className="valueFinal">R$ {item.price}</h1>
+                    </section>
+                    <h1 className="installments">ou 2x de R$ 49,95 sem juros</h1>
+                    <h1 className="frete">Frete grátis</h1>
+
+                    <button className="btn" onClick={toggle}>
+                      COMPRAR
+                    </button>
+                    <Modal isShowing={isShowing} hide={toggle} />
+                  </section>
                 </section>
-              </section>
+
+              ))}
 
             </section>
 
@@ -320,7 +365,7 @@ function App() {
           </section>
         </footer>
       </main>
-    </div>
+    </div >
   );
 }
 export default App;
