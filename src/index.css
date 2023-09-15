@@ -372,6 +372,7 @@ header .links .icon img, header .links .icon svg {
   width: 589.73px;
   height: 350px;
   border-radius: 10px;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -442,6 +443,7 @@ header .links .icon img, header .links .icon svg {
   width: 589.73px;
   height: 284px;
   border-radius: 10px;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-start;
   align-items: center;
