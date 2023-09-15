@@ -412,7 +412,7 @@ header .links .icon img, header .links .icon svg {
   font-weight: bold;
 }
 .content .title-products-related {
-  margin: 40px 0 40px 0;
+  margin: 70px 0 70px 0;
 }
 .content .title-products-related .hr {
   display: flex;
@@ -485,9 +485,15 @@ header .links .icon img, header .links .icon svg {
   width: 100%;
   height: 331px;
 }
+.content .brands h1 {
+  color: #F71963;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 70px 0 70px 0;
+}
 .content .brands .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .content .brands .icons .icon {

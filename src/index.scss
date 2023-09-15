@@ -443,7 +443,7 @@ header{
     }
 
     .title-products-related{
-        margin: 40px 0 40px 0;
+        margin: 70px 0 70px 0;
 
 
         .hr{ 
@@ -520,8 +520,15 @@ header{
         width: 100%;
         height: 331px;
 
+        h1{
+            color: $primarycolor;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 70px 0 70px 0;
+        }
+
         .icons{
-            @include space-around();
+            @include space-between();
 
             .icon{
                 background-color: white;
