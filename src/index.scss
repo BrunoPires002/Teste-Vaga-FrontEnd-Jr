@@ -14,7 +14,7 @@
 }
 
 main{
-    width: 90%;
+    width: 100%;
 }
 
 hr{
@@ -22,6 +22,8 @@ hr{
 }
 
 header{
+    width: 90%;
+
     .desc {
         @include space-around();
         font-size: 12px;
@@ -130,13 +132,19 @@ header{
 }
 
 
-.content{
-@include content();
+.banner{
+    width: 100%;
+    height: 395px;
+}
 
-    .banner{
-        width: 100%;
-        height: 395px;
-    }
+.bannerSize{
+    width: 100%;
+}
+
+.content{
+    @include content();
+    width: 90%;
+
     
     .title{
         color: $primarycolor;
@@ -156,6 +164,7 @@ header{
             height: 128px;
             background-color: $neutracolor;
             border-radius: 20px;
+            box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
         }
 
         .card{
@@ -201,6 +210,7 @@ header{
 
     .products{
         text-align: center;
+        margin: 25px 0 25px 0;
 
         .topics{
             @include flex-center();
@@ -208,65 +218,232 @@ header{
 
         .cards{
             @include flex-center();
-            height: 500px;
+            margin: 10px;
 
             .card{
-
-                img{
-                    width: 247px;
-                    height: 228px;
-                }
+                height: 500px;
+                padding: 10px;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
 
                 .cont{
-                    width: 100%;
                     height: 100%;
+                    display: grid;
+                    
+                    img{
+                        width: 247px;
+                        height: 228px;
+                    }
+
+                    .nameProduct{
+                        width: 245px;
+                    }
+
+                    .value{
+                        width: 247px;
+
+                        .valueTrue{
+                            font-weight:lighter;
+                            font-size: 16px;
+
+                        }
+
+                        .valueFinal{
+                            font-weight:bold;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .installments, .frete, .btn{     
+                        width: 247px;
+                    }
+                    
+                    .frete{
+                        color: $primarycolor;
+                    }
+                    
+                    .btn{
+                        height: 44px;
+                        background-color: $primarycolor;
+                        color: white;
+                        border: none;
+                        border-radius: 8px;
+                        cursor:pointer;
+                        font-weight: bold;
+                        align-self: self-end;
+                    }
+
+                    .modal {
+                        display: none; /* Hidden by default */
+                        position: fixed; /* Stay in place */
+                        z-index: 1; /* Sit on top */
+                        left: 0;
+                        top: 0;
+                        width: 100%; /* Full width */
+                        height: 100%; /* Full height */
+                        overflow: auto; /* Enable scroll if needed */
+                        background-color: rgb(0,0,0); /* Fallback color */
+                        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                    }
+
+                    /*.modalContent {
+                        @include flex-center();
+                        background-color: #fefefe;
+                        margin: 15% auto;
+                        padding: 20px;
+                        border: 1px solid #888;
+                        width: 80%; 
+                        height: 299.26px;
+
+                        .cont{
+                            text-align: left;
+                            margin: 10px 10px 10px 30px;
+                            @include space-aroung-grid();
+                            
+                            .modal-header{
+                                display: grid;
+
+                                .close{
+                                    text-align: right;
+                                }
+                            }
+
+                            .modal-header h2{
+                                color: $blue;
+                                font-size: 20px;
+                            }
+
+                            .value{
+                                color: $blue;
+                                font-size: 20;
+                                font-weight:bold;
+                            }
+
+                            .desc{
+                                color: $gray-black;
+                                font-size: 10px;
+                            }
+
+                            .more a{
+                                color: $blue;
+                                text-decoration: none;
+                                font-size: 12px;
+                            }
+
+                            .quant{
+                                width: 110px;
+                                height: 36px;
+                                border: solid 2px $blue;
+                                border-radius: 8px;
+                                @include space-around();
+
+                                button{
+                                    background-color: white;
+                                    border: none;
+                                    width: 20.31px;
+                                    height: 19.64px;
+                                    color: $blue;
+                                }
+
+                                p{
+                                    color: $blue;
+                                }
+                                
+                                button:hover{
+                                    cursor: pointer;
+                                }
+                            }
+
+                            button{
+                                width: 245px;
+                                height: 44px;
+                                background-color: $primarycolor;
+                                color: white;
+                                border: none;
+                                border-radius: 8px;
+                                cursor:pointer;
+                            }
+                        }
+
+                        .img{
+                            margin: 10px 30px 10px 10px;
+
+                        }*/
+                    }
+
+                    .close {
+                        color: #aaa;
+                        float: right;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+
+                    .close:hover,
+                    .close:focus {
+                      color: black;
+                      text-decoration: none;
+                      cursor: pointer;
+                    }
+                    
                 }
 
                 .nameProduct, .valueTrue, .valueFinal, .installments, .frete{
                     text-align: left;
                 }
-
-                .btn{
-                    width: 100%;
-                    height: 44px;
-                }
-            }
         }
     }
 
     .partners{
-        @include flex-center();   
-
-        .card{
-            background-image: url("../public/img/image.png");
-            width: 574px;
-            height: 350px;
-        }
-    }
-
-    .products-related{
-        @include flex-center();
+        @include space-around();   
 
         .card{
             background-image: url("../public/img/image.png");
             width: 589.73px;
             height: 284px;
+            border-radius: 10px;
+            @include flex-start();
+
+            .cardContent{
+                @include center-grid();
+                text-align: left;
+                color: white;
+                margin: 30px;
+
+                h2{
+                    font-weight: bold;
+                    font-size: 40px;
+                }
+                h1{
+                    font-weight: lighter;
+                    font-size: 16px
+                }
+            }
+        }
+    }
+
+    .products-related{
+        @include space-around();   
+
+        .card{
+            background-image: url("../public/img/image.png");
+            width: 589.73px;
+            height: 284px;
+            border-radius: 10px;
         }
     }
 
     .brands{
-
-        width: 1250px;
+        width: 100%;
         height: 331px;
 
         .icons{
-            @include flex-center();
+            @include space-around();
 
             .icon{
                 background-color: white;
                 width: 211px;
                 height: 211px;
                 border-radius: 50%;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
                 @include flex-center();
             }
         }

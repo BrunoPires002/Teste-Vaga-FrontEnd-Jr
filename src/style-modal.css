@@ -1,0 +1,110 @@
+main {
+  text-align: -webkit-center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  display: flex;
+  height: 325px;
+  width: 769px;
+}
+.modal .img {
+  width: 247px;
+  height: 192.2px;
+  margin: 25px;
+  align-self: center;
+}
+.modal .value {
+  color: #041E50;
+  font-size: 20;
+  font-weight: bold;
+}
+.modal .desc {
+  color: #222222;
+  font-size: 10px;
+}
+.modal .more a {
+  color: #041E50;
+  text-decoration: none;
+  font-size: 12px;
+}
+.modal .quant {
+  width: 110px;
+  height: 36px;
+  border: solid 2px #041E50;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.modal .quant button {
+  background-color: white;
+  border: none;
+  width: 20.31px;
+  height: 19.64px;
+  color: #041E50;
+}
+.modal .quant p {
+  color: #041E50;
+  font-size: 15px;
+}
+.modal .quant button:hover {
+  cursor: pointer;
+}
+.modal .btn {
+  width: 245px;
+  height: 44px;
+  background-color: #F71963;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal .modal-header {
+  display: grid;
+  justify-content: space-around;
+  width: 70%;
+  margin: 25px;
+}
+.modal .modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: 0.3;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  text-align: right;
+}/*# sourceMappingURL=style-modal.css.map */

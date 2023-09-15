@@ -1,9 +1,14 @@
-import "./index.css";
-
+import React from 'react';
 import { logo, crown, ShieldCheck, Truck, card, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda  } from './img.js';
 
+//import "./Modal.js";
+
+import Modal from './Modal.js';
+import useModal from './useModal.js';
 
 function App() {
+  const {isShowing, toggle} = useModal();
+
   return (
     <div className="App">
       <main>
@@ -61,9 +66,12 @@ function App() {
           </nav>
         </header>
         
-        <section className="content">
+        
+        <section className="bannerSize">
+            <img src="img/banner.png" className="banner"></img>
+          </section>
 
-          <img src="img/banner.png" className="banner"></img>
+        <section className="content">
 
           <section className="category">
 
@@ -130,12 +138,16 @@ function App() {
               <section className="card">
                 <section className="cont">
                   <img src="img/"></img>
-                  <h2 className="nameProduct">Name</h2>
-                  <h1 className="valueTrue">Valor sem desconto</h1>
-                  <h1 className="valueFinal">Valor a vista</h1>
-                  <h1 className="installments">Parcelas</h1>
+                  <h2 className="nameProduct">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                  <section className="value">
+                    <h1 className="valueTrue">R$ 30,90</h1>
+                    <h1 className="valueFinal">R$ 28,90</h1>
+                  </section>
+                  <h1 className="installments">ou 2x de R$ 49,95 sem juros</h1>
                   <h1 className="frete">Frete grátis</h1>
-                  <button className="btn">COMPRAR</button>
+
+                  <button className="btn" onClick={toggle}>COMPRAR</button>
+                  <Modal isShowing={isShowing} hide={toggle} />
                 </section>
               </section>
 
@@ -146,15 +158,19 @@ function App() {
           <section className="partners">
 
             <section className="card">
-              <h2>Parceiros</h2>
-              <h1>loren</h1>
-              <button>Confira</button>
+              <div className='cardContent'>
+                <h2>Produtos</h2>
+                <h1>loren</h1>
+                <button>Confira</button>
+              </div>
             </section>
 
             <section className="card">
-              <h2>Parceiros</h2>
-              <h1>loren</h1>
-              <button>Confira</button>
+              <div className='cardContent'>
+                <h2>Produtos</h2>
+                <h1>loren</h1>
+                <button>Confira</button>
+              </div>
             </section>
 
           </section>
@@ -164,16 +180,20 @@ function App() {
 
           <section className="products-related">
 
-          <section className="card">
-              <h2>Produtos</h2>
-              <h1>loren</h1>
-              <button>Confira</button>
+            <section className="card">
+              <div className='cardContent'>
+                <h2>Produtos</h2>
+                <h1>loren</h1>
+                <button>Confira</button>
+              </div>
             </section>
 
             <section className="card">
-              <h2>Produtos</h2>
-              <h1>loren</h1>
-              <button>Confira</button>
+              <div className='cardContent'>
+                <h2>Produtos</h2>
+                <h1>loren</h1>
+                <button>Confira</button>
+              </div>
             </section>
 
           </section>
@@ -272,5 +292,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
