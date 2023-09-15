@@ -393,12 +393,13 @@ header{
     }
 
     .partners{
-        @include space-around();   
+        margin: 50px 0 50px 0;
+        @include space-between();   
 
         .card{
             background-image: url("../public/img/image.png");
             width: 589.73px;
-            height: 284px;
+            height: 350px;
             border-radius: 10px;
             @include flex-start();
 
@@ -407,7 +408,9 @@ header{
                 text-align: left;
                 color: white;
                 margin: 35px;
+                align-items: self-end;
                 align-self: self-end;
+                height: 200px;
 
                 h2{
                     font-weight: bold;
@@ -415,7 +418,7 @@ header{
                     width: 196px;
                     height: 60px;
                 }
-                
+
                 h1{
                     font-weight: lighter;
                     font-size: 16px;
@@ -438,14 +441,76 @@ header{
         }
     }
 
+    .title-products-related{
+        margin: 40px 0 40px 0;
+
+
+        .hr{ 
+            display: flex;
+            justify-content: space-around;
+
+            hr{     
+                align-self: center;
+                width: 30%;
+            }
+        }
+        h2{
+            font-weight: bold;
+            font-size:30px;
+            align-self: center;
+        }
+
+        h1{
+            font-size: 15px;
+            font-weight: bold;
+            color: $gray-black;
+            align-self: center;
+        }
+    }
+
     .products-related{
-        @include space-around();   
+        @include space-between();      
 
         .card{
             background-image: url("../public/img/image.png");
             width: 589.73px;
             height: 284px;
             border-radius: 10px;
+            @include flex-start();
+
+            .cardContent{
+                @include center-grid();
+                text-align: left;
+                color: white;
+                margin: 35px;
+                align-self: self-end;
+                height: 70%;
+                h2{
+                    font-weight: bold;
+                    font-size: 40px;
+                    width: 196px;
+                    height: 60px;
+                }
+
+                h1{
+                    font-weight: lighter;
+                    font-size: 16px;
+                    width: 181px;
+                    height: 48px;
+                }
+
+                .btn{
+                    width: 131px;
+                    height: 48px;
+                    color: white;
+                    background-color: $primarycolor;
+                    border-radius: 8px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
         }
     }
 
