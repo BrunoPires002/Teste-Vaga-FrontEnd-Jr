@@ -159,17 +159,17 @@ function App() {
 
             <section className="card">
               <div className='cardContent'>
-                <h2>Produtos</h2>
-                <h1>loren</h1>
-                <button>Confira</button>
+                <h2>Parceiros</h2>
+                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                <button className='btn' id='button'>CONFIRA</button>
               </div>
             </section>
 
             <section className="card">
-              <div className='cardContent'>
-                <h2>Produtos</h2>
-                <h1>loren</h1>
-                <button>Confira</button>
+              <div className="cardContent">
+                <h2>Parceiros</h2>
+                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                <button className='btn' id='button'>CONFIRA</button>
               </div>
             </section>
 
