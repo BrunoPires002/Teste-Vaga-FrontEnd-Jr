@@ -1,5 +1,5 @@
 import React from 'react';
-import { logo, crown, ShieldCheck, Truck, card, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda  } from './img.js';
+import { logo, crown, ShieldCheck, Truck, card, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo } from './img.js';
 
 //import "./Modal.js";
 
@@ -7,7 +7,7 @@ import Modal from './Modal.js';
 import useModal from './useModal.js';
 
 function App() {
-  const {isShowing, toggle} = useModal();
+  const { isShowing, toggle } = useModal();
 
   return (
     <div className="App">
@@ -47,7 +47,7 @@ function App() {
                 <div className="icon"><a href="">{ShoppingCart()}</a></div>
               </section>
             </div>
-            
+
             <hr></hr>
 
             <section className="links">
@@ -60,16 +60,16 @@ function App() {
               <section className="icon">
                 <a href="">
                   {crown()}
-                ASSINATURA</a>
+                  ASSINATURA</a>
               </section>
             </section>
           </nav>
         </header>
-        
-        
+
+
         <section className="bannerSize">
-            <img src="img/banner.png" className="banner"></img>
-          </section>
+          <img src="img/banner.png" className="banner"></img>
+        </section>
 
         <section className="content">
 
@@ -119,18 +119,18 @@ function App() {
             </section>
 
           </section>
-          
+
           <h2 className="title">Produtos relacionados</h2>
 
           <section className="topics">
-              <a href="">CELULAR</a>
-              <a href="">ACESSÓRIOS</a>
-              <a href="">TABLETS</a>
-              <a href="">NOTEBOOKS</a>
-              <a href="">TVS</a>
-              <a href="">VER TODOS</a>
+            <a href="">CELULAR</a>
+            <a href="">ACESSÓRIOS</a>
+            <a href="">TABLETS</a>
+            <a href="">NOTEBOOKS</a>
+            <a href="">TVS</a>
+            <a href="">VER TODOS</a>
           </section>
-          
+
           <section className="products">
 
             <section className="cards">
@@ -178,7 +178,7 @@ function App() {
           <section className='title-products-related'>
             <div className='hr'>
               <hr></hr>
-                <h2 className="title">Produtos relacionados</h2>
+              <h2 className="title">Produtos relacionados</h2>
               <hr></hr>
             </div>
             <h1>Ver todos</h1>
@@ -209,91 +209,116 @@ function App() {
 
             <section className="icons">
               <section className="icon">
-                <img src="img/logo.png"></img>
+                {logo()}
               </section>
               <section className="icon">
-                <img src="img/logo.png"></img>
+                {logo()}
               </section>
               <section className="icon">
-                <img src="img/logo.png"></img>
+                {logo()}
               </section>
               <section className="icon">
-                <img src="img/logo.png"></img>
+                {logo()}
               </section>
               <section className="icon">
-                <img src="img/logo.png"></img>
+                {logo()}
               </section>
             </section>
           </section>
+        </section>
 
-          <footer>
-            
-            <section className="footer">
-              <section className="about">
+        <footer>
+
+          <section className="footer">
+            <section className="about">
+              <div className='title'>
                 <h1 className="">Sobre nós</h1>
+              </div>
+
+              <div className='cont'>
                 <h2>CONHEÇA</h2>
                 <h2>COMO COMPRAR</h2>
                 <h2>INDICAÇÃO E DESCONTO</h2>
+              </div>
 
-                <img src="img/facebook.png" className="iconSocial"></img>
-                <img src="img/instagram.png" className="iconSocial"></img>
-                <img src="img/youtube.png" className="iconSocial"></img>
-
-              </section>
-              <section className="information">
+              <div className='icons'>
+                <div className='social'>{face()}</div>
+                <div className='social'>{insta()}</div>
+                <div className='social'>{yt()}</div>
+              </div>
+            </section>
+            <section className="information">
+              <div className='title'>
                 <h1 className="">INFORMAÇÕES ÚTEIS</h1>
+              </div>
+
+              <div className='cont'>
                 <h2>FALE CONOSCO</h2>
                 <h2>DÚVIDAS</h2>
                 <h2>PRAZOS DE ENTREGA</h2>
                 <h2>FORMAS DE PAGAMENTO</h2>
                 <h2>POLÍTICA DE PRIVACIDADE</h2>
                 <h2>TROCAS E DEVOLUÇÕES</h2>
-              </section>
+              </div>
+            </section>
 
-              <section className="payment">
+            <section className="payment">
+              <div className='title'>
                 <h1 className="">FORMAS DE PAGAMENTO</h1>
+              </div>
 
-                <section className="img">
-                  <img src="img/Group 1351.png" className="imgPayment"></img>
-                  <img src="img/elo.png" className="imgPayment"></img>
-                  <img src="img/alelo.png" className="imgPayment"></img>
-                  <img src="img/dinners.png" className="imgPayment"></img>
-                  <img src="img/ifood.png" className="imgPayment"></img>
-                  <img src="img/mastercard.png" className="imgPayment"></img>
-                  <img src="img/pix.png" className="imgPayment"></img>
-                  <img src="img/amex.png" className="imgPayment"></img>
-                  <img src="img/ticket.png" className="imgPayment"></img>
-                  <img src="img/sodexo.png" className="imgPayment"></img>
-                </section>
-              </section>
-
-              <section className="register">
-                <h1>CADASTRE-SE E RECEBA NOSSAS</h1>
-                <h2>NOVIDADES E PROMOÇÕES</h2>
-
-                <h3>lorem</h3>
-
-                <input type="text" placeholder="SEU E-MAIL" className="input"></input>
-                <button>OK</button>
-              </section>
-
-            </section>
-
-            <hr></hr>
-
-            <section className="copyright">
-              <h1>COPYRIGHT</h1>
-              
               <section className="img">
-                <img src="img/econverse.png" className="company"></img>
-                <img src="img/vtex.png" className="company"></img>
+                <div className='imgPayment'>{visa()}</div>
+                <div className='imgPayment'>{elo()}</div>
+                <div className='imgPayment'>{alelo()}</div>
+                <div className='imgPayment'>{diners()}</div>
+                <div className='imgPayment'>{ifood()}</div>
+                <div className='imgPayment'>{mastercard()}</div>
+                <div className='imgPayment'>{pix()}</div>
+                <div className='imgPayment'>{american()}</div>
+                <div className='imgPayment'>{ticket()}</div>
+                <div className='imgPayment'>{sodexo()}</div>
+
               </section>
-
             </section>
-          </footer>
-        </section>
 
+            <section className="register">
+              <div className='cont'>
+                <div className='title'>
+                  <h1>CADASTRE-SE E RECEBA NOSSAS</h1>
+                  <h2>NOVIDADES E PROMOÇÕES</h2>
+                </div>
 
+                <div className='desc'>
+                  <h3>Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia lorem ipsum</h3>
+                </div>
+
+                <div className='btn'>
+                  <input type="text" placeholder="SEU E-MAIL" className="input"></input>
+                  <button>OK</button>
+                </div>
+              </div>
+            </section>
+
+          </section>
+
+          <hr></hr>
+
+          <section className="copyright">
+            <h1>Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.
+              É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.</h1>
+
+            <section className="img">
+              <div className='imgEconverse'>
+                {econverse()}
+              </div>
+              <div className='imgVtex'>
+                {vtex()}
+              </div>
+            </section>
+
+          </section>
+        </footer>
       </main>
     </div>
   );

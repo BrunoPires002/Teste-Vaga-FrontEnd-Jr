@@ -1,27 +1,27 @@
 @import './colors.scss';
 @import './functions.scss';
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-.App{
+.App {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main{
+main {
     width: 100%;
 }
 
-hr{
+hr {
     border-color: $neutracolor;
 }
 
-header{
+header {
     width: 90%;
 
     .desc {
@@ -29,30 +29,33 @@ header{
         font-size: 12px;
         color: $gray;
 
-        .red{
+        .red {
             color: $primarycolor;
         }
 
-        .buy{
+        .buy {
             @include space-around();
             margin: 10px 10px 10px 10px;
         }
 
-        .buy h1,h2,svg{
+        .buy h1,
+        h2,
+        svg {
             margin: 0 3px 0 3px;
 
         }
     }
 
-    .search{
+    .search {
         @include space-around();
         margin: 5px 0 5px 0;
 
-        
-        a{
+
+        a {
             color: $gray;
         }
-        button{
+
+        button {
             border: none;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
@@ -60,12 +63,12 @@ header{
             padding: 0 10px 0 10px;
             margin: 5px 0 5px 0;
         }
-        
-        form{
+
+        form {
             display: flex;
         }
 
-        input{
+        input {
             border: none;
             border-bottom-left-radius: 8px;
             border-top-left-radius: 8px;
@@ -75,38 +78,40 @@ header{
             padding-left: 10px;
         }
 
-        .icons{
+        .icons {
             display: flex;
         }
-        .icons .icon{
+
+        .icons .icon {
             padding: 0 10px 0 10px;
         }
-        .icon a:hover{
+
+        .icon a:hover {
             color: $primarycolor;
             transition: 0.3s;
         }
     }
 
-    .logo{
+    .logo {
         width: 139px;
         height: 50.64px;
     }
 
-    input{
+    input {
         width: 657px;
         height: 48px;
     }
 
-    .search .icon{
+    .search .icon {
         @include flex-center();
         width: 32px;
         height: 32px;
     }
 
-    .links{
+    .links {
         @include space-around();
 
-        a{
+        a {
             color: $gray;
             font-weight: bold;
             text-decoration: none;
@@ -116,15 +121,16 @@ header{
             margin: 10px 0 10px 0;
         }
 
-        a:hover{
+        a:hover {
             color: $primarycolor;
             transition: 0.3s;
         }
 
-        .icon{
+        .icon {
             @include flex-center();
 
-            img, svg{
+            img,
+            svg {
                 padding: 0 10px 0 10px;
             }
         }
@@ -132,32 +138,32 @@ header{
 }
 
 
-.banner{
+.banner {
     width: 100%;
     height: 395px;
 }
 
-.bannerSize{
+.bannerSize {
     width: 100%;
 }
 
-.content{
+.content {
     @include content();
     width: 90%;
 
-    
-    .title{
+
+    .title {
         color: $primarycolor;
         font-weight: bold;
     }
 
-    .category{
+    .category {
         height: 174px;
         width: 100%;
         margin: 25px 0 25px 0;
         @include space-between();
 
-        .imgCategory{
+        .imgCategory {
             @include flex-center();
             color: $primarycolor;
             width: 128px;
@@ -167,28 +173,28 @@ header{
             box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
         }
 
-        .card{
+        .card {
             height: 100%;
             text-align: -webkit-center;
 
-            h1{
+            h1 {
                 margin-top: 20px;
             }
         }
 
-        .card:hover{
+        .card:hover {
             color: $primarycolor;
             transition: 0.3s;
 
         }
     }
 
-    .topics{
+    .topics {
         @include flex-center();
         width: 100%;
         margin: 25px 0 25px 0;
-        
-        a{
+
+        a {
             color: $gray;
             font-weight: bold;
             text-decoration: none;
@@ -202,87 +208,97 @@ header{
             border: solid 2px $gray;
         }
 
-        a:hover{  
+        a:hover {
             color: $primarycolor;
             transition: 0.3s;
         }
     }
 
-    .products{
+    .products {
         text-align: center;
         margin: 25px 0 25px 0;
 
-        .topics{
+        .topics {
             @include flex-center();
         }
 
-        .cards{
+        .cards {
             @include flex-center();
             margin: 10px;
 
-            .card{
+            .card {
                 height: 500px;
                 padding: 10px;
                 box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
 
-                .cont{
+                .cont {
                     height: 100%;
                     display: grid;
-                    
-                    img{
+
+                    img {
                         width: 247px;
                         height: 228px;
                     }
 
-                    .nameProduct{
+                    .nameProduct {
                         width: 245px;
                     }
 
-                    .value{
+                    .value {
                         width: 247px;
 
-                        .valueTrue{
-                            font-weight:lighter;
+                        .valueTrue {
+                            font-weight: lighter;
                             font-size: 16px;
 
                         }
 
-                        .valueFinal{
-                            font-weight:bold;
+                        .valueFinal {
+                            font-weight: bold;
                             font-size: 20px;
                         }
                     }
 
-                    .installments, .frete, .btn{     
+                    .installments,
+                    .frete,
+                    .btn {
                         width: 247px;
                     }
-                    
-                    .frete{
+
+                    .frete {
                         color: $primarycolor;
                     }
-                    
-                    .btn{
+
+                    .btn {
                         height: 44px;
                         background-color: $primarycolor;
                         color: white;
                         border: none;
                         border-radius: 8px;
-                        cursor:pointer;
+                        cursor: pointer;
                         font-weight: bold;
                         align-self: self-end;
                     }
 
                     .modal {
-                        display: none; /* Hidden by default */
-                        position: fixed; /* Stay in place */
-                        z-index: 1; /* Sit on top */
+                        display: none;
+                        /* Hidden by default */
+                        position: fixed;
+                        /* Stay in place */
+                        z-index: 1;
+                        /* Sit on top */
                         left: 0;
                         top: 0;
-                        width: 100%; /* Full width */
-                        height: 100%; /* Full height */
-                        overflow: auto; /* Enable scroll if needed */
-                        background-color: rgb(0,0,0); /* Fallback color */
-                        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                        width: 100%;
+                        /* Full width */
+                        height: 100%;
+                        /* Full height */
+                        overflow: auto;
+                        /* Enable scroll if needed */
+                        background-color: rgb(0, 0, 0);
+                        /* Fallback color */
+                        background-color: rgba(0, 0, 0, 0.4);
+                        /* Black w/ opacity */
                     }
 
                     /*.modalContent {
@@ -368,35 +384,39 @@ header{
                             margin: 10px 30px 10px 10px;
 
                         }*/
-                    }
-
-                    .close {
-                        color: #aaa;
-                        float: right;
-                        font-size: 28px;
-                        font-weight: bold;
-                    }
-
-                    .close:hover,
-                    .close:focus {
-                      color: black;
-                      text-decoration: none;
-                      cursor: pointer;
-                    }
-                    
                 }
 
-                .nameProduct, .valueTrue, .valueFinal, .installments, .frete{
-                    text-align: left;
+                .close {
+                    color: #aaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
                 }
+
+                .close:hover,
+                .close:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+            }
+
+            .nameProduct,
+            .valueTrue,
+            .valueFinal,
+            .installments,
+            .frete {
+                text-align: left;
+            }
         }
     }
 
-    .partners{
+    .partners {
         margin: 50px 0 50px 0;
-        @include space-between();   
+        @include space-between();
 
-        .card{
+        .card {
             background-image: url("../public/img/image.png");
             width: 589.73px;
             height: 350px;
@@ -404,7 +424,7 @@ header{
             box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
             @include flex-start();
 
-            .cardContent{
+            .cardContent {
                 @include center-grid();
                 text-align: left;
                 color: white;
@@ -413,21 +433,21 @@ header{
                 align-self: self-end;
                 height: 200px;
 
-                h2{
+                h2 {
                     font-weight: bold;
                     font-size: 40px;
                     width: 196px;
                     height: 60px;
                 }
 
-                h1{
+                h1 {
                     font-weight: lighter;
                     font-size: 16px;
                     width: 181px;
                     height: 48px;
                 }
 
-                .btn{
+                .btn {
                     width: 131px;
                     height: 48px;
                     color: white;
@@ -442,26 +462,27 @@ header{
         }
     }
 
-    .title-products-related{
+    .title-products-related {
         margin: 70px 0 70px 0;
 
 
-        .hr{ 
+        .hr {
             display: flex;
             justify-content: space-around;
 
-            hr{     
+            hr {
                 align-self: center;
                 width: 30%;
             }
         }
-        h2{
+
+        h2 {
             font-weight: bold;
-            font-size:30px;
+            font-size: 30px;
             align-self: center;
         }
 
-        h1{
+        h1 {
             font-size: 15px;
             font-weight: bold;
             color: $gray-black;
@@ -469,10 +490,10 @@ header{
         }
     }
 
-    .products-related{
-        @include space-between();      
+    .products-related {
+        @include space-between();
 
-        .card{
+        .card {
             background-image: url("../public/img/image.png");
             width: 589.73px;
             height: 284px;
@@ -480,28 +501,29 @@ header{
             box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
             @include flex-start();
 
-            .cardContent{
+            .cardContent {
                 @include center-grid();
                 text-align: left;
                 color: white;
                 margin: 35px;
                 align-self: self-end;
                 height: 70%;
-                h2{
+
+                h2 {
                     font-weight: bold;
                     font-size: 40px;
                     width: 196px;
                     height: 60px;
                 }
 
-                h1{
+                h1 {
                     font-weight: lighter;
                     font-size: 16px;
                     width: 181px;
                     height: 48px;
                 }
 
-                .btn{
+                .btn {
                     width: 131px;
                     height: 48px;
                     color: white;
@@ -516,21 +538,21 @@ header{
         }
     }
 
-    .brands{
+    .brands {
         width: 100%;
         height: 331px;
 
-        h1{
+        h1 {
             color: $primarycolor;
             font-size: 30px;
             font-weight: bold;
             margin: 70px 0 70px 0;
         }
 
-        .icons{
+        .icons {
             @include space-between();
 
-            .icon{
+            .icon {
                 background-color: white;
                 width: 211px;
                 height: 211px;
@@ -540,49 +562,162 @@ header{
             }
         }
     }
+}
 
-    .footer{
-        @include flex-center();
+.footer {
+    background-color: $footer;
+    height: 325px;
+    margin-top: 70px;
+    padding: 45px;
+    color: white;
+    @include space-around-start();
 
-        .about{
-            .iconSocial{
+    .about,
+    .information,
+    .payment {
+        text-align: left;
+        height: 100%;
+
+        h1 {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        h2 {
+            font-weight: lighter;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .icons {
+            justify-content: space-between;
+            display: flex;
+
+            .social {
                 width: 22.02px;
                 height: 22px;
+                cursor: pointer;
             }
         }
 
-        .payment{
-                .img{
-                    display: grid;
-                    grid-template-columns: repeat(3, 3fr);
-                }
-                
-                .img img{
-                    width: 55px;
-                    height: 19.55px;
-                }
-
+        .title, .cont{
+            margin-bottom: 80px;
         }
+        
+    }
 
-        .register{
-            input{
-                width: 230px;
-                height: 45px;
+    .register {
+        width: 380px;
+        height: 260px;
+        background-color: white;
+        color: $gray-black;
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+
+        .cont {
+            height: 70%;
+            display: grid;
+            align-items: center;
+            margin: 0 25px 0 25px;
+
+
+            h1 {
+                font-weight: lighter;
+                font-size: 18px;
             }
 
-            button{
-                width: 62px;
-                height: 45px;
+            h2 {
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            .desc {
+                h3 {
+                    font-weight: lighter;
+                    font-size: 12px;
+                    width: 90%;
+                }
+            }
+
+            .btn {
+                input {
+                    height: 45px;
+                    border-radius: 8px;
+                    margin-right: 5px;
+                    padding: 0 15px 0;
+                    border: solid 0.5px;
+                    font-size: 12px;
+                    
+                }
+
+                button {
+                    height: 45px;
+                    background-color: $primarycolor;
+                    color: white;
+                    border-radius: 8px;
+                    border: none;
+                    margin-left: 5px;
+                }
             }
         }
     }
-    .copyright{
-        @include flex-center();
 
-        .img img{
-            width: 106.25px;
-            height: 31.62px;    
+    .payment {
+        .img {
+            display: grid;
+            grid-template-columns: repeat(3, 3fr);
+        }
+
+        .img .imgPayment {
+            width: 55px;
+            height: 30.31px;
+            margin: 0px 20px 0px 0px;
+            //padding: 0 20px 20px 0;
+        }
+
+    }
+
+    .register {
+        align-self: center;
+
+        .title {
+            text-align: initial;
+        }
+
+        input {
+            width: 190px;
+            height: 45px;
+        }
+
+        button {
+            width: 62px;
+            height: 45px;
         }
     }
-    
+}
+
+.copyright {
+    background-color: $footer;
+    padding: 10px;
+    color: white;
+    @include space-around();
+
+    h1 {
+        font-weight: lighter;
+        width: 698px;
+        font-size: 10px;
+        text-align: initial;
+    }
+
+    .img {
+        display: flex;
+    }
+
+    .imgVtex,
+    .imgEconverse {
+        margin: 0 8px 0 8px;
+        width: 106.25px;
+        height: 31.62px;
+    }
 }

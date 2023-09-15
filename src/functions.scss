@@ -28,10 +28,15 @@
     align-items: center;
 }
 
-@mixin space-aroung-grid{
+@mixin space-around-start{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@mixin space-around-grid{
     display: grid;
     justify-content: space-around;
-    align-items: center;
 }
 
 @mixin content{
