@@ -1,5 +1,5 @@
 import React from 'react';
-import { logo, crown, ShieldCheck, Truck, card, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo } from './img.js';
+import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo } from './img.js';
 
 //import "./Modal.js";
 
@@ -37,7 +37,7 @@ function App() {
 
               <form action="" method="" className="formSearch">
                 <input type="text" id="txtSearch" className="search" placeholder="O que você está buscando?"></input>
-                <button type="button"><img src="img/MagnifyingGlass.png"></img></button>
+                <button type="button">{search()}</button>
               </form>
 
               <section className="icons">

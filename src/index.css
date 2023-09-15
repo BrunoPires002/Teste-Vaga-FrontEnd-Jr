@@ -58,6 +58,7 @@ header .search button {
   background-color: #F6F5F2;
   padding: 0 10px 0 10px;
   margin: 5px 0 5px 0;
+  cursor: pointer;
 }
 header .search form {
   display: flex;
