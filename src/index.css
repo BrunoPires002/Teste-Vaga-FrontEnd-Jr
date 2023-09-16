@@ -200,6 +200,7 @@ header .links .icon svg {
 .content .category .card {
   height: 100%;
   text-align: -webkit-center;
+  cursor: pointer;
 }
 .content .category .card h1 {
   margin-top: 20px;
