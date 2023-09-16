@@ -469,14 +469,18 @@ header .links .icon svg {
   align-items: center;
 }
 .content .partners .card {
-  background-image: url("../public/img/image.png");
   width: 589.73px;
   height: 350px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.content .partners .card .background {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
+  filter: brightness(70%);
 }
 .content .partners .card .cardContent {
   display: grid;
@@ -487,7 +491,8 @@ header .links .icon svg {
   margin: 35px;
   align-items: self-end;
   align-self: self-end;
-  height: 200px;
+  height: 230px;
+  position: absolute;
 }
 .content .partners .card .cardContent h2 {
   font-weight: bold;
@@ -540,24 +545,28 @@ header .links .icon svg {
   align-items: center;
 }
 .content .products-related .card {
-  background-image: url("../public/img/image.png");
   width: 589.73px;
   height: 284px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.content .products-related .card .background {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
+  filter: brightness(70%);
 }
 .content .products-related .card .cardContent {
   display: grid;
   justify-content: center;
   text-align: center;
+  height: 190px;
   text-align: left;
   color: white;
   margin: 35px;
-  align-self: self-end;
-  height: 70%;
+  position: absolute;
 }
 .content .products-related .card .cardContent h2 {
   font-weight: bold;

@@ -209,6 +209,7 @@ function App() {
           <section className="partners">
 
             <section className="card">
+              <img src="img/image.png"  className="background"></img>
               <div className='cardContent'>
                 <h2>Parceiros</h2>
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
@@ -217,6 +218,7 @@ function App() {
             </section>
 
             <section className="card">
+              <img src="img/image.png"  className="background"></img>
               <div className="cardContent">
                 <h2>Parceiros</h2>
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
@@ -238,6 +240,7 @@ function App() {
           <section className="products-related">
 
             <section className="card">
+              <img src="img/image.png"  className="background"></img>
               <div className='cardContent'>
                 <h2>Produtos</h2>
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
@@ -246,6 +249,7 @@ function App() {
             </section>
 
             <section className="card">
+              <img src="img/image.png"  className="background"></img>
               <div className='cardContent'>
                 <h2>Produtos</h2>
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
