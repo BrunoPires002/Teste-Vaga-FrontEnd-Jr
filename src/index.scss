@@ -641,6 +641,7 @@ header {
         }
 
         .icons {
+            cursor: pointer;
             @include space-between();
 
             .icon {
@@ -785,6 +786,7 @@ header {
         button {
             width: 62px;
             height: 45px;
+            cursor: pointer;
         }
     }
 }

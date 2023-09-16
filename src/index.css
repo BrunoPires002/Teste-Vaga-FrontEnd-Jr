@@ -583,6 +583,7 @@ header .links .icon svg {
   margin: 70px 0 70px 0;
 }
 .content .brands .icons {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -714,6 +715,7 @@ header .links .icon svg {
 .footer .register button {
   width: 62px;
   height: 45px;
+  cursor: pointer;
 }
 
 .copyright {
