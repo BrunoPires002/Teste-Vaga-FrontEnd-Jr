@@ -617,6 +617,15 @@ header .links .icon svg {
   justify-content: center;
   align-items: center;
 }
+.content .brands .icons .buttons {
+  position: absolute;
+  text-align: right;
+  width: 90%;
+}
+.content .brands .icons .buttons button {
+  background: none;
+  border: none;
+}
 
 .footer {
   background-color: #2A2A2A;

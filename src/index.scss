@@ -678,6 +678,17 @@ header {
                 box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
                 @include flex-center();
             }
+
+            .buttons{
+                position: absolute;
+                text-align: right;
+                width: 90%;
+
+                button{
+                    background: none;
+                    border: none;
+                }
+            }
         }
     }
 }

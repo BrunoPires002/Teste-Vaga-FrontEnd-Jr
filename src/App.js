@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, banner, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo, left, right } from './img.js';
+import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, banner, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo, left, right, seta } from './img.js';
 
 //json
 
@@ -278,6 +278,9 @@ function App() {
               <section className="icon">
                 {logo()}
               </section>
+              <div className="buttons">
+                <button>{seta()}</button>
+              </div>
             </section>
           </section>
         </section>
