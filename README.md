@@ -74,6 +74,8 @@ Prints
 
 ![image](https://github.com/BrunoPires002/Teste-Vaga-FrontEnd-Jr/assets/100307101/b2f7fd06-71c5-4d16-b673-0f4a24a61c31)
 
+![image](https://github.com/BrunoPires002/Teste-Vaga-FrontEnd-Jr/assets/100307101/7023a0c6-31ec-4cfb-a28b-7eb128745d37)
+
 ![image](https://github.com/BrunoPires002/Teste-Vaga-FrontEnd-Jr/assets/100307101/b0e05033-1b83-4538-9d31-33c3fd2fdd6c)
 
 ![image](https://github.com/BrunoPires002/Teste-Vaga-FrontEnd-Jr/assets/100307101/7985fd55-34ac-4f31-9a75-d898f0cd97bc)
