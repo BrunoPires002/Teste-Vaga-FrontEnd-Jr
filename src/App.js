@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo, left, right } from './img.js';
+import { logo, crown, ShieldCheck, Truck, card, search, vector, Heart, UserCircle, ShoppingCart, banner, pc, supermercado, whiskey, ferramentas, saude, esportes, moda, econverse, vtex, face, insta, yt, visa, elo, alelo, diners, mastercard, ifood, pix, american, ticket, sodexo, left, right } from './img.js';
 
 //json
 
@@ -98,7 +98,14 @@ function App() {
 
 
         <section className="bannerSize">
-          <img src="img/banner.png" className="banner"></img>
+          <div className="image">
+            <img src="img/banner.png" className="banner"></img>
+          </div>
+          <div className="titleBanner">
+            <h1>Venha conhecer nossas <br></br>promoções</h1>
+            <h2>50% Off nos produtos </h2>
+            <button className="button">Ver produto</button>
+          </div>
         </section>
 
         <section className="content">

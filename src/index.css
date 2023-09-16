@@ -125,13 +125,48 @@ header .links .icon svg {
   padding: 0 10px 0 10px;
 }
 
-.banner {
+.bannerSize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.bannerSize .titleBanner {
+  position: absolute;
+  text-align: left;
+  width: 90%;
+}
+.bannerSize .titleBanner h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 30px;
+}
+.bannerSize .titleBanner h2 {
+  font-weight: lighter;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 30px;
+}
+.bannerSize .titleBanner button {
+  border: none;
+  border-radius: 8px;
+  background-color: #F71963;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  width: 227px;
+  height: 60px;
+  cursor: pointer;
+}
+.bannerSize .image {
   width: 100%;
   height: 395px;
 }
-
-.bannerSize {
+.bannerSize .image img {
   width: 100%;
+  height: 100%;
+  filter: brightness(70%);
 }
 
 .content {
