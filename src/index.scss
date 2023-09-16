@@ -666,8 +666,7 @@ header {
             margin: 70px 0 70px 0;
         }
 
-        .icons {
-            cursor: pointer;
+        .icons {    
             @include space-between();
 
             .icon {
@@ -676,17 +675,18 @@ header {
                 height: 211px;
                 border-radius: 50%;
                 box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
                 @include flex-center();
             }
 
             .buttons{
                 position: absolute;
-                text-align: right;
-                width: 90%;
-
+                right: 5%;
                 button{
                     background: none;
                     border: none;
+                    cursor: pointer;
+
                 }
             }
         }

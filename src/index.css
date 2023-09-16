@@ -602,7 +602,6 @@ header .links .icon svg {
   margin: 70px 0 70px 0;
 }
 .content .brands .icons {
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -613,18 +612,19 @@ header .links .icon svg {
   height: 211px;
   border-radius: 50%;
   box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .content .brands .icons .buttons {
   position: absolute;
-  text-align: right;
-  width: 90%;
+  right: 5%;
 }
 .content .brands .icons .buttons button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .footer {
