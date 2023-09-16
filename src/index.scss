@@ -1,10 +1,12 @@
 @import './colors.scss';
 @import './functions.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .App {
@@ -114,7 +116,7 @@ header {
 
         a {
             color: $gray;
-            font-weight: bold;
+            font-weight: 500;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -158,8 +160,8 @@ header {
             margin-bottom: 30px;
         }
     
-        h2{
-            font-weight: lighter;
+        h2{            
+            font-weight: 500;
             font-size: 36px;
             color: white;
             margin-bottom: 30px;
@@ -224,13 +226,18 @@ header {
             cursor: pointer;
 
             h1 {
+                color: $gray-black;
+                font-weight: 500;
                 margin-top: 20px;
             }
         }
 
         .card:hover {
-            color: $primarycolor;
-            transition: 0.3s;
+
+            h1{
+                color: $primarycolor;
+                transition: 0.3s;
+            }
 
         }
     }
@@ -330,14 +337,19 @@ header {
                     .nameProduct {
                         width: 245px;
                         font-size: 15px;
-                        font-weight: lighter;
+                        font-weight: 300;
+                    }
+
+                    .installments{
+                        color: $gray-black;
+                        font-weight: 500;
                     }
 
                     .value {
                         width: 247px;
 
                         .valueTrue {
-                            font-weight: lighter;
+                            font-weight: 500;
                             font-size: 16px;
                             color: $gray;
                             text-decoration: line-through;
@@ -348,6 +360,7 @@ header {
                             font-size: 20px;
                             color: $gray-black;
                         }
+
                     }
 
                     .installments,
@@ -358,6 +371,7 @@ header {
 
                     .frete {
                         color: $primarycolor;
+                        font-weight: 500;
                     }
 
                     .btn {
@@ -369,6 +383,7 @@ header {
                         cursor: pointer;
                         font-weight: bold;
                         align-self: self-end;
+                        font-size: 14px;
                     }
 
                     .modal {
@@ -532,7 +547,7 @@ header {
                 }
 
                 h1 {
-                    font-weight: lighter;
+                    font-weight: 300;
                     font-size: 16px;
                     width: 181px;
                     height: 48px;
@@ -608,7 +623,7 @@ header {
                 }
 
                 h1 {
-                    font-weight: lighter;
+                    font-weight: 300;
                     font-size: 16px;
                     width: 181px;
                     height: 48px;
@@ -716,18 +731,18 @@ header {
 
 
             h1 {
-                font-weight: lighter;
+                font-weight: 300;
                 font-size: 18px;
             }
 
             h2 {
                 font-weight: bold;
-                font-size: 22px;
+                font-size: 21px;
             }
 
             .desc {
                 h3 {
-                    font-weight: lighter;
+                    font-weight: 300;
                     font-size: 12px;
                     width: 90%;
                 }
@@ -751,6 +766,7 @@ header {
                     border-radius: 8px;
                     border: none;
                     margin-left: 5px;
+                    font-weight: bold;
                 }
             }
         }
@@ -798,7 +814,7 @@ header {
     @include space-around();
 
     h1 {
-        font-weight: lighter;
+        font-weight: 200;
         width: 698px;
         font-size: 10px;
         text-align: initial;

@@ -57,12 +57,14 @@ main {
   .desc {
     color: $gray-black;
     font-size: 10px;
+    font-weight: 500;
   }
 
   .more a {
     color: $blue;
     text-decoration: none;
     font-size: 12px;
+    font-weight: 500;
     size: 20px;
   }
 
@@ -71,10 +73,10 @@ main {
     height: 36px;
     border: solid 1px $blue;
     border-radius: 8px;
+    font-weight: 500;
     @include space-around();
 
     button {
-      background-color: white;
       border: none;
       width: 20.31px;
       color: $blue;
@@ -91,6 +93,7 @@ main {
 
     .mais,
     .menos {
+      background: none;
       font-size: 25px;
       text-align: center;
     }
@@ -115,6 +118,13 @@ main {
     color: $blue;
     font-weight: normal;
 
+    .title{
+      font-weight: 400;
+    }
+
+    .value{
+      font-weight: bold;
+    }
   }
 
   .modal-close-button {

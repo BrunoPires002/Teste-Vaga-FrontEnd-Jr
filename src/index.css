@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .App {
@@ -104,7 +106,7 @@ header .links {
 }
 header .links a {
   color: #9F9F9F;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -143,7 +145,7 @@ header .links .icon svg {
   margin-bottom: 30px;
 }
 .bannerSize .titleBanner h2 {
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 36px;
   color: white;
   margin-bottom: 30px;
@@ -203,9 +205,11 @@ header .links .icon svg {
   cursor: pointer;
 }
 .content .category .card h1 {
+  color: #3F3F40;
+  font-weight: 500;
   margin-top: 20px;
 }
-.content .category .card:hover {
+.content .category .card:hover h1 {
   color: #F71963;
   transition: 0.3s;
 }
@@ -379,13 +383,17 @@ header .links .icon svg {
 .content .products .cards .card .cont .nameProduct {
   width: 245px;
   font-size: 15px;
-  font-weight: lighter;
+  font-weight: 300;
+}
+.content .products .cards .card .cont .installments {
+  color: #3F3F40;
+  font-weight: 500;
 }
 .content .products .cards .card .cont .value {
   width: 247px;
 }
 .content .products .cards .card .cont .value .valueTrue {
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 16px;
   color: #9F9F9F;
   text-decoration: line-through;
@@ -402,6 +410,7 @@ header .links .icon svg {
 }
 .content .products .cards .card .cont .frete {
   color: #F71963;
+  font-weight: 500;
 }
 .content .products .cards .card .cont .btn {
   height: 44px;
@@ -412,6 +421,7 @@ header .links .icon svg {
   cursor: pointer;
   font-weight: bold;
   align-self: self-end;
+  font-size: 14px;
 }
 .content .products .cards .card .cont .modal {
   display: none;
@@ -486,7 +496,7 @@ header .links .icon svg {
   height: 60px;
 }
 .content .partners .card .cardContent h1 {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 16px;
   width: 181px;
   height: 48px;
@@ -556,7 +566,7 @@ header .links .icon svg {
   height: 60px;
 }
 .content .products-related .card .cardContent h1 {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 16px;
   width: 181px;
   height: 48px;
@@ -665,15 +675,15 @@ header .links .icon svg {
   margin: 0 25px 0 25px;
 }
 .footer .register .cont h1 {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 18px;
 }
 .footer .register .cont h2 {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 21px;
 }
 .footer .register .cont .desc h3 {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 12px;
   width: 90%;
 }
@@ -692,6 +702,7 @@ header .links .icon svg {
   border-radius: 8px;
   border: none;
   margin-left: 5px;
+  font-weight: bold;
 }
 .footer .payment .img {
   display: grid;
@@ -727,7 +738,7 @@ header .links .icon svg {
   align-items: center;
 }
 .copyright h1 {
-  font-weight: lighter;
+  font-weight: 200;
   width: 698px;
   font-size: 10px;
   text-align: initial;

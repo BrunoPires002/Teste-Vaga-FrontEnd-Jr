@@ -52,11 +52,13 @@ main {
 .modal .desc {
   color: #3F3F40;
   font-size: 10px;
+  font-weight: 500;
 }
 .modal .more a {
   color: #041E50;
   text-decoration: none;
   font-size: 12px;
+  font-weight: 500;
   size: 20px;
 }
 .modal .quant {
@@ -64,12 +66,12 @@ main {
   height: 36px;
   border: solid 1px #041E50;
   border-radius: 8px;
+  font-weight: 500;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .modal .quant button {
-  background-color: white;
   border: none;
   width: 20.31px;
   color: #041E50;
@@ -83,6 +85,7 @@ main {
 }
 .modal .quant .mais,
 .modal .quant .menos {
+  background: none;
   font-size: 25px;
   text-align: center;
 }
@@ -103,6 +106,12 @@ main {
   margin: 25px;
   color: #041E50;
   font-weight: normal;
+}
+.modal .modal-header .title {
+  font-weight: 400;
+}
+.modal .modal-header .value {
+  font-weight: bold;
 }
 .modal .modal-close-button {
   font-size: 1.4rem;
