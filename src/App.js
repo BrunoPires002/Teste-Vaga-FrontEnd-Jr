@@ -9,7 +9,7 @@ import Modal from './Modal.js';
 import useModal from './useModal.js';
 
 function App() {
-  const { isShowing, toggle } = useModal();
+  const { isShowing, toggle, selectProduct } = useModal();
 
   const carousel = useRef(null);
 
@@ -19,9 +19,7 @@ function App() {
     fetch(`https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json`)
       .then((response) => response.json())
       .then((actualData) => {
-        console.log(actualData);
         setData(actualData.products);
-        console.log(data);
       })
       .catch((err) => {
         console.log(err.message);
@@ -170,10 +168,10 @@ function App() {
           <section className="products" ref={carousel}>
             <section className="cards">
 
-            <div className="buttons">
-              <button onClick={handleLeftClick}>{left()}</button>
-              <button onClick={handleRightClick}>{right()}</button>
-            </div>
+              <div className="buttons">
+                <button onClick={handleLeftClick}>{left()}</button>
+                <button onClick={handleRightClick}>{right()}</button>
+              </div>
 
               {data.map((item, index) => (
                 <section className="card">
@@ -187,10 +185,9 @@ function App() {
                     <h1 className="installments">ou 2x de R$ 49,95 sem juros</h1>
                     <h1 className="frete">Frete grátis</h1>
 
-                    <button className="btn" onClick={toggle}>
+                    <button className="btn" onClick={() => toggle(item)}>
                       COMPRAR
                     </button>
-                    <Modal isShowing={isShowing} hide={toggle} />
                   </section>
                 </section>
 
@@ -199,6 +196,8 @@ function App() {
             </section>
 
           </section>
+        
+          <Modal isShowing={isShowing} hide={() => toggle()} value={selectProduct} />
 
           <section className="partners">
 
